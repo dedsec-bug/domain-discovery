@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [ -d ~/siddharth/recon/$1/$(date +"%d-%m-%Y") ]
+if [ -d ~/recon/$1/$(date +"%d-%m-%Y") ]
 then
         echo -e "\e[1;33m[+] Direcotry already exists\e[0m"
 else
-        mkdir -p ~/siddharth/recon/$1/$(date +"%d-%m-%Y")
+        mkdir -p ~/recon/$1/$(date +"%d-%m-%Y")
         echo -e "\e[1;33m[+] Direcotry Created\e[0m"
 fi
 
