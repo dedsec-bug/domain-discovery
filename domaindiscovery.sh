@@ -8,7 +8,7 @@ else
         echo -e "\e[1;33m[+] Direcotry Created\e[0m"
 fi
 
-cd ~/siddharth/recon/$1/$(date +"%d-%m-%Y")
+cd ~/recon/$1/$(date +"%d-%m-%Y")
 
 echo -e "\e[1;33m[+] Running CRTsh\e[0m"
 curl -s https://crt.sh/?q=%25.$1 | grep $1 | grep "<TD>" | cut -d">" -f2 | cut -d"<" -f1 | sort -u | sed s/*.//g >> crtsh.txt
